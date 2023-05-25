@@ -1,5 +1,5 @@
 import React from 'react';
-import './global.css';
+import '@/theme/global.css';
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })

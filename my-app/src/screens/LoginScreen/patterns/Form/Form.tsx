@@ -6,7 +6,9 @@ interface FormProps {
 }
 export default function Form({children}: FormProps) {
   return (
-    <Box>
+    <Box
+      tag="form"
+    >
       {children}
     </Box>
   );

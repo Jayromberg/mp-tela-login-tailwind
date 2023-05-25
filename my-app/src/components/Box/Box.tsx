@@ -7,7 +7,7 @@ interface BoxProps {
 }
 export default function Box({ children, className, tag, ...props }: BoxProps) {
   return (
-    <BaseComponent tag={tag} className={`${className} 'flex flex-col content-start shrink-0'`} {...props}>
+    <BaseComponent tag={tag} className={className} {...props}>
       {children}
     </BaseComponent>
   );

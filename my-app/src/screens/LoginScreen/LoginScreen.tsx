@@ -3,7 +3,9 @@ import Form from "./patterns/Form/Form";
 
 export default function LoginScreen() {
   return (
-    <Box>
+    <Box
+      tag="main"
+    >
       <Form>
         Olá
       </Form>
