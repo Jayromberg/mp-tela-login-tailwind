@@ -1,7 +1,12 @@
+import Box from "@/components/Box/Box";
+import Form from "./patterns/Form/Form";
+
 export default function LoginScreen() {
   return (
-    <div>
-      <h1>Login Screen</h1>
-    </div>
+    <Box>
+      <Form>
+        Olá
+      </Form>
+    </Box>
   );
 }
