@@ -10,14 +10,20 @@ export default function LoginScreen() {
       className="items-center justify-center h-screen"
     >
       <Background />
-      <Text
-        tag="h1"
+      <Box 
+        tag="section"
+        className="items-center justify-center"
       >
-        Faça seu login
-      </Text>
-      <Form>
-        Olá
-      </Form>
+        <Text
+          tag="h1"
+          className="text-4xl font-bold text-center"
+        >
+          Faça seu login
+        </Text>
+        <Form>
+          Form.input
+        </Form>
+      </Box>
     </Box>
   );
 }
