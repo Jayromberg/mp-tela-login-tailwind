@@ -9,6 +9,7 @@ interface BaseComponentProps {
   type?: string;
   placeholder?: string;
   id?: string;
+  htmlFor?: string;
 };
 const BaseComponent = ({
   tag,
@@ -19,6 +20,7 @@ const BaseComponent = ({
   type,
   placeholder,
   id,
+  htmlFor,
   ...props
 }: BaseComponentProps) => {
   const element = tag;
@@ -32,6 +34,7 @@ const BaseComponent = ({
       type,
       placeholder,
       id,
+      htmlFor,
       ...props
     }, 
     children
