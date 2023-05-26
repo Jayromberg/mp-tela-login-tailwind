@@ -9,10 +9,11 @@ interface BaseComponentProps {
 };
 const BaseComponent = ({ tag, children, className, src, alt,...props }: BaseComponentProps) => {
   const element = tag;
+  const elementClass = `flex flex-col content-start shrink-0 ${className}`
   return React.createElement(
     element, 
     { 
-      className: `'flex flex-col content-start shrink-0' ${className}`,
+      className: elementClass,
       src,
       alt,
       ...props
@@ -22,7 +23,8 @@ const BaseComponent = ({ tag, children, className, src, alt,...props }: BaseComp
 };
 
 BaseComponent.defaultProps = {
-  tag: 'div'
+  tag: 'div',
+  className: '',
 }
 
 export default BaseComponent;

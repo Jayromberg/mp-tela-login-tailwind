@@ -7,6 +7,7 @@ export default function LoginScreen() {
   return (
     <Box
       tag="main"
+      className="items-center justify-center h-screen"
     >
       <Text
         tag="h1"
@@ -15,7 +16,7 @@ export default function LoginScreen() {
       </Text>
       <Box
         tag="section"
-        className="hidden"
+        className="opacity-25"
       >
         <Background />
       </Box>

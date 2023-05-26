@@ -1,7 +1,7 @@
 import BaseComponent from "@/components/BaseComponent/BaseComponent";
 
 interface BoxProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   tag?: string;
 }
