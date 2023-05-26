@@ -9,9 +9,6 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif']    
       },
-      backgroundImage: {
-        astronaut: "url('./public/image/history-in-hd-e5eDHbmHprg-unsplash.jpg')",
-      }
     },
   },
   plugins: [],

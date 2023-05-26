@@ -9,17 +9,12 @@ export default function LoginScreen() {
       tag="main"
       className="items-center justify-center h-screen"
     >
+      <Background />
       <Text
         tag="h1"
       >
         Faça seu login
       </Text>
-      <Box
-        tag="section"
-        className="opacity-25"
-      >
-        <Background />
-      </Box>
       <Form>
         Olá
       </Form>
