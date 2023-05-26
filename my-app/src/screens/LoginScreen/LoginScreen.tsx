@@ -21,7 +21,7 @@ export default function LoginScreen() {
           Faça seu login
         </Text>
         <Form>
-          Form.input
+          <Form.Inputs />
         </Form>
       </Box>
     </Box>

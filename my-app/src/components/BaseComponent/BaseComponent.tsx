@@ -10,36 +10,23 @@ interface BaseComponentProps {
   placeholder?: string;
   id?: string;
   htmlFor?: string;
+  ref?: React.RefObject<HTMLElement>
+  href?: string
 };
-const BaseComponent = ({
-  tag,
-  children,
-  className,
-  src,
-  alt,
-  type,
-  placeholder,
-  id,
-  htmlFor,
-  ...props
-}: BaseComponentProps) => {
-  const element = tag;
-  const elementClass = `flex flex-col content-start shrink-0 ${className}`
+export const BaseComponent = React.forwardRef<unknown, BaseComponentProps>(({tag, className, children, ...props}, ref) => {
+  const Tag = tag;
+  const ClasseName = `flex flex-col content-start shrink-0 ${className}`
+
   return React.createElement(
-    element, 
+    Tag, 
     { 
-      className: elementClass,
-      src,
-      alt,
-      type,
-      placeholder,
-      id,
-      htmlFor,
+      className: ClasseName,
+      ref,
       ...props
     }, 
     children
   );
-};
+});
 
 BaseComponent.defaultProps = {
   tag: 'div',
