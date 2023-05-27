@@ -1,19 +1,14 @@
-import React from "react";
-import BaseComponent from "../BaseComponent/BaseComponent";
+import LabelBase, { LabelBaseProps } from "./LabelBase";
 
-interface LabelProps {
-  children: React.ReactNode
-  htmlFor: string
-  className?: string
-}
-export default function Label({children, htmlFor, className}: LabelProps) {
+export default function Label({children, htmlFor, className}: LabelBaseProps) {
   return (
-    <BaseComponent
-      tag="label"
+    <LabelBase
       htmlFor={htmlFor}
-      className={className}
+      className={`text-sm ${className}`}
     >
       {children}
-    </BaseComponent>
-  );
+    </LabelBase>
+  )
 }
+
+Label.Base = LabelBase;

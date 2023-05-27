@@ -20,14 +20,14 @@ export default function Form({children}: FormProps) {
 Form.Inputs = () => {
   return (
     <>
-      <Label htmlFor="email" className='text-sm'>
+      <Label htmlFor="email">
         E-mail
       </Label>
-      <Input id="email" placeholder="jayro.dev@gmail.com" className='text-sm'/>
-      <Label htmlFor="password" className='text-sm'>
+      <Input id="email" placeholder="jayro.dev@gmail.com"/>
+      <Label htmlFor="password">
         Senha
       </Label>
-      <Input id="password"  placeholder="Sua senha" className='text-sm'/>
+      <Input id="password"  placeholder="Sua senha"/>
       <Button>
         Entrar
       </Button>

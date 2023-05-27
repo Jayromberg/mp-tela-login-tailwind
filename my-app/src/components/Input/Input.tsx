@@ -1,24 +1,12 @@
-import BaseComponent from "../BaseComponent/BaseComponent";
+import InputBase, { InputBaseProps } from "./InputBase";
 
-interface InputProps {
-  type?: string;
-  placeholder?: string;
-  id?: string;
-  className?: string
-}
-export default function Input({type, placeholder, id, className, ...props}: InputProps) {
+export default function Input({className, ...props}: InputBaseProps) {
   return (
-    <BaseComponent
-      tag="input"
-      type={type}
-      placeholder={placeholder}
-      id={id}
-      className={className}
+    <InputBase
+      className={`text-sm ${className}`}
       {...props}
     />
   )
 }
 
-Input.defaultProps = {
-  type: 'text',
-}
+Input.Base = InputBase;
