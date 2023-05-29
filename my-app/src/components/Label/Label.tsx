@@ -4,7 +4,7 @@ export default function Label({children, htmlFor, className}: LabelBaseProps) {
   return (
     <LabelBase
       htmlFor={htmlFor}
-      className={`text-sm ${className}`}
+      className={`text-sm mb-2 ${className}`}
     >
       {children}
     </LabelBase>

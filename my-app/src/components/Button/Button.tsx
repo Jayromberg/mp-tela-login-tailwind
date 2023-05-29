@@ -6,7 +6,7 @@ export default function Button({
 }: ButtonBaseProps) {
   return (
     <ButtonBase
-      className={`font-bold bg-gradient-to-r from-purple-500 to-pink-500 ${className}`}
+      className={`items-center justify-center font-bold bg-marianBlue w-full text-white py-2 rounded-full shadow-2xl hover:bg-trueBlue duration-150 ${className}`}
     >
       {children}
     </ButtonBase>
