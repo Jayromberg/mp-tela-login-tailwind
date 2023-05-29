@@ -11,6 +11,7 @@ export default function Form({children}: FormProps) {
   return (
     <Box
       tag="form"
+      className='w-full'
     >
       {children}
     </Box>

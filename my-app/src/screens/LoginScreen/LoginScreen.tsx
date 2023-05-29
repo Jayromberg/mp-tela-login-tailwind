@@ -8,22 +8,34 @@ export default function LoginScreen() {
   return (
     <Box
       tag="main"
-      className="items-center justify-center h-screen px-6 drop-shadow-2xl"
+      className="items-center justify-center h-screen px-6 drop-shadow-2xl lg:flex-row"
     >
-      <Background />
+      <Box className="hidden items-center justify-center bg-marianBlue lg:flex w-1/2 h-3/4">
+        <Background />
+      </Box>
       <Box 
         tag="section"
-        className="items-center justify-center bg-white rounded-lg p-10 gap-6"
+        className="bg-white items-center justify-center rounded-lg p-10 gap-6 lg:w-1/2 lg:h-3/4 lg:rounded-l-none"
       >
         <Box>
           <Icon name="logo"/>
         </Box>
-        <Text
-          tag="h1"
-          className="text-4xl font-bold text-center mb-2"
+        <Box
+          className="text-center"
         >
-          Faça seu login
-        </Text>
+          <Text
+            tag="h1"
+            className="text-4xl font-bold mb-2"
+          >
+            Faça seu login
+          </Text>
+          <Text
+            tag="p"
+            className="text-xl text-gray-700 mb-2"
+          >
+            Bem-vindo(a) de volta!
+          </Text>
+        </Box>
         <Form>
           <Form.Inputs />
         </Form>
