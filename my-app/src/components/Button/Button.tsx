@@ -6,7 +6,7 @@ export default function Button({
 }: ButtonBaseProps) {
   return (
     <ButtonBase
-      className={`${className}`}
+      className={`font-bold bg-gradient-to-r from-purple-500 to-pink-500 ${className}`}
     >
       {children}
     </ButtonBase>

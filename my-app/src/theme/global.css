@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: #070709;
-  color: #E5E7EB;
+  background: #f5f5f5ff;
   display: flex;
   flex: 1;
   flex-direction: column;

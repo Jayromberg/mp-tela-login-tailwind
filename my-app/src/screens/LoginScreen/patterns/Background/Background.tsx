@@ -1,9 +1,8 @@
-import Box from "@/components/Box/Box";
+import Image from 'next/image';
+import banner from './svg/banner.svg'
 
 export default function Background() {
   return (
-    <Box
-      className="hidden bg-[url('../../public/images/history-in-hd-e5eDHbmHprg-unsplash.jpg')] opacity-25 w-full h-96 bg-center bg-cover"
-    />
+    <Image src={banner} alt="Banner" className='hidden'/>
   )
 }

@@ -12,6 +12,10 @@ interface BaseComponentProps {
   htmlFor?: string;
   ref?: React.RefObject<HTMLElement>
   href?: string
+  color?: string
+  fill?: string
+  viewBox?: string
+  xmlns?: string
 };
 export const BaseComponent = React.forwardRef<unknown, BaseComponentProps>(({tag, className, children, ...props}, ref) => {
   const Tag = tag;
