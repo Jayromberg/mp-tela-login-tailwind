@@ -8,18 +8,16 @@ export default function LoginScreen() {
   return (
     <Box
       tag="main"
-      className="items-center justify-center h-screen px-6 drop-shadow-2xl lg:flex-row"
+      className="items-center justify-center h-screen px-6 drop-shadow-2xl lg:flex-row lg:w-3/4"
     >
-      <Box className="hidden items-center justify-center bg-marianBlue lg:flex w-1/2 h-3/4">
+      <Box className="hidden items-center justify-center bg-marianBlue lg:flex w-1/2 h-3/4 rounded-l-lg">
         <Background />
       </Box>
       <Box 
         tag="section"
         className="bg-white items-center justify-center rounded-lg p-10 gap-6 lg:w-1/2 lg:h-3/4 lg:rounded-l-none"
       >
-        <Box>
-          <Icon name="logo"/>
-        </Box>
+        <Icon name="logo" className="w-12 h-12 fill-marianBlue"/>
         <Box
           className="text-center"
         >
